@@ -1,0 +1,815 @@
+[{
+    "Code": "AF",
+    "Name": "Gatanga "
+}, {
+    "Code": "AX",
+    "Name": "Gatundu "
+}, {
+    "Code": "AL",
+    "Name": "Githunguri"
+}, {
+    "Code": "DZ",
+    "Name": "Kabete"
+}, {
+    "Code": "AS",
+    "Name": "Kandara"
+}, {
+    "Code": "AD",
+    "Name": "Kiambaa"
+}, {
+    "Code": "AT",
+    "Name": "Kiambu East"
+}, {
+    "Code": "BH",
+    "Name": "Kiambu West"
+},
+    {
+        "Code": "AO",
+        "Name": "Kieni West"
+    }, {
+    "Code": "AI",
+    "Name": "Kieni East"
+}, {
+    "Code": "AQ",
+    "Name": "Kigumo"
+}, {
+    "Code": "AG",
+    "Name": "Kipipiri"
+}, {
+    "Code": "AR",
+    "Name": "Kirinyaga Central"
+}, {
+    "Code": "AM",
+    "Name": "Kirinyaga East"
+}, {
+    "Code": "AU",
+    "Name": "Kirinyaga South"
+}, {
+    "Code": "BB",
+    "Name": "Kirinyaga West"
+}, {
+    "Code": "BY",
+    "Name": "Lari"
+}, {
+    "Code": "BE",
+    "Name": "Mirangini"
+}, {
+    "Code": "BJ",
+    "Name": "Mukurweini"
+}, {
+    "Code": "BM",
+    "Name": "Muranga East"
+}, {
+    "Code": "BT",
+    "Name": "Muranga South"
+}, {
+    "Code": "BO",
+    "Name": "Nyandarua Central"
+}, {
+    "Code": "BQ",
+    "Name": "Nyandarua North"
+}, {
+    "Code": "BA",
+    "Name": "Nyandarua South"
+}, {
+    "Code": "BW",
+    "Name": "Nyandarua West"
+}, {
+    "Code": "BV",
+    "Name": "Nyeri Central"
+}, {
+    "Code": "BR",
+    "Name": "Nyeri East"
+}, {
+    "Code": "IO",
+    "Name": "Nyeri South"
+}, {
+    "Code": "BG",
+    "Name": "Ruiru"
+}, {
+    "Code": "BF",
+    "Name": "Thika East"
+}, {
+    "Code": "BI",
+    "Name": "Thika West"
+}, {
+    "Code": "KH",
+    "Name": "Plateau"
+}, {
+    "Code": "CM",
+    "Name": "Kaloleni"
+}, {
+    "Code": "CA",
+    "Name": "Kilifi"
+}, {
+    "Code": "CV",
+    "Name": "Kilindini"
+}, {
+    "Code": "KY",
+    "Name": "Kinango"
+}, {
+    "Code": "TD",
+    "Name": "Kwale"
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "Code": "AF",
+        "Name": "Malindi "
+    }, {
+    "Code": "AX",
+    "Name": "Mombasa"
+}, {
+    "Code": "AL",
+    "Name": "Msabweni"
+}, {
+    "Code": "DZ",
+    "Name": "Taita"
+}, {
+    "Code": "AS",
+    "Name": "Tana Delta"
+}, {
+    "Code": "AD",
+    "Name": "Kiambaa"
+}, {
+    "Code": "AT",
+    "Name": "Kiambu East"
+}, {
+    "Code": "BH",
+    "Name": "Tana River"
+},
+    {
+        "Code": "AO",
+        "Name": "Taveta"
+    }, {
+    "Code": "AI",
+    "Name": "Buuri"
+}, {
+    "Code": "AQ",
+    "Name": "Embu East"
+}, {
+    "Code": "AG",
+    "Name": "Embu West"
+}, {
+    "Code": "AR",
+    "Name": "Garbatula"
+}, {
+    "Code": "AM",
+    "Name": "Igembe North"
+}, {
+    "Code": "AU",
+    "Name": "Igembe South"
+}, {
+    "Code": "BB",
+    "Name": "Imenti North"
+}, {
+    "Code": "BY",
+    "Name": "Imenti South"
+}, {
+    "Code": "BE",
+    "Name": "Isiolo"
+}, {
+    "Code": "BJ",
+    "Name": "Kangundo"
+}, {
+    "Code": "BM",
+    "Name": "Kathiani"
+}, {
+    "Code": "BT",
+    "Name": "Kathonzweni"
+}, {
+    "Code": "BO",
+    "Name": "Kibwezi"
+}, {
+    "Code": "BQ",
+    "Name": "Kilungu"
+}, {
+    "Code": "BA",
+    "Name": "Kitui Central"
+}, {
+    "Code": "BW",
+    "Name": "Kitui West"
+}, {
+    "Code": "BV",
+    "Name": "Kyuso"
+}, {
+    "Code": "BR",
+    "Name": "Maara"
+}, {
+    "Code": "IO",
+    "Name": "Machakos"
+}, {
+    "Code": "BG",
+    "Name": "Makueni"
+}, {
+    "Code": "BF",
+    "Name": "Marsabit"
+}, {
+    "Code": "BI",
+    "Name": "Marsabit North"
+}, {
+    "Code": "KH",
+    "Name": "Marsabit South"
+}, {
+    "Code": "CM",
+    "Name": "Masinga"
+}, {
+    "Code": "CA",
+    "Name": "Matungulu"
+}, {
+    "Code": "CV",
+    "Name": "Mbeere North"
+}, {
+    "Code": "KY",
+    "Name": "Mbeere South"
+}, {
+    "Code": "TD",
+    "Name": "Mbooni East"
+}, {
+    "Code": "CA",
+    "Name": "Mbooni West"
+}, {
+    "Code": "CV",
+    "Name": "Meru Central"
+}, {
+    "Code": "KY",
+    "Name": "Meru South"
+}, {
+    "Code": "TD",
+    "Name": "Mbooni East"
+}, {
+    "Code": "TD",
+    "Name": "Mukaa"
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "Code": "AF",
+        "Name": "Gatanga "
+    }, {
+    "Code": "AX",
+    "Name": "Gatundu "
+}, {
+    "Code": "AL",
+    "Name": "Githunguri"
+}, {
+    "Code": "DZ",
+    "Name": "Kabete"
+}, {
+    "Code": "AS",
+    "Name": "Kandara"
+}, {
+    "Code": "AD",
+    "Name": "Kiambaa"
+}, {
+    "Code": "AT",
+    "Name": "Kiambu East"
+}, {
+    "Code": "BH",
+    "Name": "Kiambu West"
+},
+    {
+        "Code": "AO",
+        "Name": "Kieni West"
+    }, {
+    "Code": "AI",
+    "Name": "Kieni East"
+}, {
+    "Code": "AQ",
+    "Name": "Kigumo"
+}, {
+    "Code": "AG",
+    "Name": "Kipipiri"
+}, {
+    "Code": "AR",
+    "Name": "Kirinyaga Central"
+}, {
+    "Code": "AM",
+    "Name": "Kirinyaga East"
+}, {
+    "Code": "AU",
+    "Name": "Kirinyaga South"
+}, {
+    "Code": "BB",
+    "Name": "Kirinyaga West"
+}, {
+    "Code": "BY",
+    "Name": "Lari"
+}, {
+    "Code": "BE",
+    "Name": "Mirangini"
+}, {
+    "Code": "BJ",
+    "Name": "Mukurweini"
+}, {
+    "Code": "BM",
+    "Name": "Muranga East"
+}, {
+    "Code": "BT",
+    "Name": "Muranga South"
+}, {
+    "Code": "BO",
+    "Name": "Nyandarua Central"
+}, {
+    "Code": "BQ",
+    "Name": "Nyandarua North"
+}, {
+    "Code": "BA",
+    "Name": "Nyandarua South"
+}, {
+    "Code": "BW",
+    "Name": "Nyandarua West"
+}, {
+    "Code": "BV",
+    "Name": "Nyeri Central"
+}, {
+    "Code": "BR",
+    "Name": "Nyeri East"
+}, {
+    "Code": "IO",
+    "Name": "Nyeri South"
+}, {
+    "Code": "BG",
+    "Name": "Ruiru"
+}, {
+    "Code": "BF",
+    "Name": "Thika East"
+}, {
+    "Code": "BI",
+    "Name": "Thika West"
+}, {
+    "Code": "KH",
+    "Name": "Plateau"
+}, {
+    "Code": "CM",
+    "Name": "Kaloleni"
+}, {
+    "Code": "CA",
+    "Name": "Kilifi"
+}, {
+    "Code": "CV",
+    "Name": "Kilindini"
+}, {
+    "Code": "KY",
+    "Name": "Kinango"
+}, {
+    "Code": "TD",
+    "Name": "Kwale"
+}, {
+        "Code": "AF",
+        "Name": "Mutitu "
+    }, {
+    "Code": "AX",
+    "Name": "Mutomo "
+}, {
+    "Code": "AL",
+    "Name": "Mwala "
+}, {
+    "Code": "DZ",
+    "Name": "Mwingi "
+}, {
+    "Code": "AS",
+    "Name": "Nzaui "
+}, {
+    "Code": "AD",
+    "Name": "Tharaka North"
+}, {
+    "Code": "AT",
+    "Name": "Tharaka South"
+}, {
+    "Code": "BH",
+    "Name": "Tigania East"
+},
+    {
+        "Code": "AO",
+        "Name": "Tigania West "
+    }, {
+    "Code": "AI",
+    "Name": "Yatta"
+}, {
+    "Code": "AQ",
+    "Name": "Nairobi East"
+}, {
+    "Code": "AG",
+    "Name": "Nairobi North"
+}, {
+    "Code": "AR",
+    "Name": "Nairobi West"
+}, {
+    "Code": "AM",
+    "Name": "Westlands"
+}, {
+    "Code": "AU",
+    "Name": "Fafi"
+}, {
+    "Code": "BB",
+    "Name": "Garissa"
+}, {
+    "Code": "BY",
+    "Name": "Ijara "
+}, {
+    "Code": "BE",
+    "Name": "Lagdera "
+}, {
+    "Code": "BJ",
+    "Name": "Mandera Central "
+}, {
+    "Code": "BM",
+    "Name": "Mandera East"
+}, {
+    "Code": "BT",
+    "Name": "Mandera North"
+}, {
+    "Code": "BO",
+    "Name": "Mandera West"
+}, {
+    "Code": "BQ",
+    "Name": "Wajir East"
+}, {
+    "Code": "BA",
+    "Name": "Wajir North"
+}, {
+    "Code": "BW",
+    "Name": "Wajir South"
+}, {
+    "Code": "BV",
+    "Name": "Wajir West"
+}, {
+    "Code": "BR",
+    "Name": "Bondo"
+}, {
+    "Code": "IO",
+    "Name": "Borabu "
+}, {
+    "Code": "BG",
+    "Name": "Gucha "
+}, {
+    "Code": "BF",
+    "Name": "Homa Bay"
+}, {
+    "Code": "BI",
+    "Name": "Kanyanya"
+}, {
+    "Code": "KH",
+    "Name": "Kisii Central"
+}, {
+    "Code": "CM",
+    "Name": "Kisii South"
+}, {
+    "Code": "CA",
+    "Name": "Kisumu East"
+}, {
+    "Code": "CV",
+    "Name": "Kisumu West"
+}, {
+    "Code": "KY",
+    "Name": "Kuria East"
+}, {
+    "Code": "TD",
+    "Name": "Kuria West"
+}, {
+    "Code": "CA",
+    "Name": "Manga"
+}, {
+    "Code": "CV",
+    "Name": "Marani"
+}, {
+    "Code": "KY",
+    "Name": "Masaba"
+}, {
+    "Code": "TD",
+    "Name": "Mbita "
+}, {
+    "Code": "TD",
+    "Name": "Migori"
+},{
+        "Code": "AF",
+        "Name": "Ndhiwa "
+    }, {
+    "Code": "AX",
+    "Name": "North Masaba "
+}, {
+    "Code": "AL",
+    "Name": "Nyakach "
+}, {
+    "Code": "DZ",
+    "Name": "Nyamache  "
+}, {
+    "Code": "AS",
+    "Name": "Nyamira  "
+}, {
+    "Code": "AD",
+    "Name": "Nyamira North"
+}, {
+    "Code": "AT",
+    "Name": "Nyando"
+}, {
+    "Code": "BH",
+    "Name": "Nyatike "
+},
+    {
+        "Code": "AO",
+        "Name": "Rachuonyo North"
+    }, {
+    "Code": "AI",
+    "Name": "Rachuonyo South "
+}, {
+    "Code": "AQ",
+    "Name": "Rarieda"
+}, {
+    "Code": "AG",
+    "Name": "Rongo"
+}, {
+    "Code": "AR",
+    "Name": "Siaya "
+}, {
+    "Code": "AM",
+    "Name": "South Gucha"
+}, {
+    "Code": "AU",
+    "Name": "Suba"
+}, {
+    "Code": "BB",
+    "Name": "Uriri "
+}, {
+    "Code": "BY",
+    "Name": "Baringo Central"
+}, {
+    "Code": "BE",
+    "Name": "Baringo North "
+}, {
+    "Code": "BJ",
+    "Name": "Bomet"
+}, {
+    "Code": "BM",
+    "Name": "Buret"
+}, {
+    "Code": "BT",
+    "Name": "East Pokot"
+}, {
+    "Code": "BO",
+    "Name": "Eldoret East"
+}, {
+    "Code": "BQ",
+    "Name": "Eldoret West"
+}, {
+    "Code": "BA",
+    "Name": "Kajiado North"
+}, {
+    "Code": "BW",
+    "Name": "Kajiado South"
+}, {
+    "Code": "BV",
+    "Name": "Keiyo"
+}, {
+    "Code": "BR",
+    "Name": "Kericho"
+}, {
+    "Code": "IO",
+    "Name": "Kipkelion"
+}, {
+    "Code": "BG",
+    "Name": "Koibatek"
+}, {
+    "Code": "BF",
+    "Name": "Kwanza"
+}, {
+    "Code": "BI",
+    "Name": "Laikipia Central"
+}, {
+    "Code": "KH",
+    "Name": "Laikipia East"
+}, {
+    "Code": "CM",
+    "Name": "Laikipia North "
+}, {
+    "Code": "CA",
+    "Name": "Laikipia West"
+}, {
+    "Code": "CV",
+    "Name": "Loima"
+}, {
+    "Code": "KY",
+    "Name": "Loitoktok"
+}, {
+    "Code": "TD",
+    "Name": "Marakwet"
+}, {
+    "Code": "CA",
+    "Name": "Marigat"
+}, {
+    "Code": "CV",
+    "Name": "Mogotio"
+}, {
+    "Code": "KY",
+    "Name": "Molo "
+}, {
+    "Code": "TD",
+    "Name": "Naivasha  "
+}, {
+    "Code": "TD",
+    "Name": "Nakuru "
+},
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "Code": "AF",
+        "Name": "Nakuru North "
+    }, {
+    "Code": "AX",
+    "Name": "Nandi Central"
+}, {
+    "Code": "AL",
+    "Name": "Nandi East"
+}, {
+    "Code": "DZ",
+    "Name": "Nandi North"
+}, {
+    "Code": "AS",
+    "Name": "Nandi South"
+}, {
+    "Code": "AD",
+    "Name": "Narok North"
+}, {
+    "Code": "AT",
+    "Name": "Narok South "
+}, {
+    "Code": "BH",
+    "Name": "Njoro"
+},
+    {
+        "Code": "AO",
+        "Name": "North Pokot"
+    }, {
+    "Code": "AI",
+    "Name": "Nyahururu"
+}, {
+    "Code": "AQ",
+    "Name": "Pokot Central"
+}, {
+    "Code": "AG",
+    "Name": "Samburu Central"
+}, {
+    "Code": "AR",
+    "Name": "Samburu East"
+}, {
+    "Code": "AM",
+    "Name": "Samburu North"
+}, {
+    "Code": "AU",
+    "Name": "Sotik"
+}, {
+    "Code": "BB",
+    "Name": "Tinderet "
+}, {
+    "Code": "BY",
+    "Name": "Trans Nzoia East"
+}, {
+    "Code": "BE",
+    "Name": "Trans Nzoia West"
+}, {
+    "Code": "BJ",
+    "Name": "Trans Mara"
+}, {
+    "Code": "BM",
+    "Name": "Turkana Central"
+}, {
+    "Code": "BT",
+    "Name": "Turkana East"
+}, {
+    "Code": "BO",
+    "Name": "Turkana North "
+}, {
+    "Code": "BQ",
+    "Name": "Turkana South"
+}, {
+    "Code": "BA",
+    "Name": "Turkana West"
+}, {
+    "Code": "BW",
+    "Name": "Wareng"
+}, {
+    "Code": "BV",
+    "Name": "West Pokot "
+}, {
+    "Code": "BR",
+    "Name": "Bungoma Central"
+}, {
+    "Code": "IO",
+    "Name": "Bungoma East"
+}, {
+    "Code": "BG",
+    "Name": "Bungoma North"
+}, {
+    "Code": "BF",
+    "Name": "Bungoma South"
+}, {
+    "Code": "BI",
+    "Name": "Bungoma West"
+}, {
+    "Code": "KH",
+    "Name": "Bunyula"
+}, {
+    "Code": "CM",
+    "Name": "Busia"
+}, {
+    "Code": "CA",
+    "Name": "Butere "
+}, {
+    "Code": "CV",
+    "Name": "Emuhaya"
+}, {
+    "Code": "KY",
+    "Name": "Hamisi"
+}, {
+    "Code": "TD",
+    "Name": "Kakamega Central"
+}, {
+    "Code": "CA",
+    "Name": "Kakamega East"
+}, {
+    "Code": "CV",
+    "Name": "Kakamega North"
+}, {
+    "Code": "KY",
+    "Name": "Kakamega South "
+}, {
+    "Code": "TD",
+    "Name": "Lugari"
+}, {
+    "Code": "TD",
+    "Name": "Mt. Elgon"
+}, {
+    "Code": "TD",
+    "Name": "Mumias "
+}, {
+    "Code": "CA",
+    "Name": "Samia"
+}, {
+    "Code": "CV",
+    "Name": "Teso North"
+}, {
+    "Code": "KY",
+    "Name": "Teso South"
+}, {
+    "Code": "TD",
+    "Name": "Vihiga"
+}
+
+
+
+
+
+
+]

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#fff"
+        map:cardBackgroundColor="#fff"
+        map:cardCornerRadius="10dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TRACING BORDER"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="14dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textSize="14dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Temp Reading"
+                        android:gravity="start|center"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Name"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/id_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="ID Number"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/phone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Phone number"
+                        android:gravity="start|center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/vehicle_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Vehicle number plate"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/seat_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Seat Number"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+
+                    <EditText
+                        android:id="@+id/from_village"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:hint="FROM/village"
+                        android:inputType="text"
+                        android:padding="5sp"
+                        android:singleLine="true"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/to_village"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="TO/village"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/textstyle"
+                        android:hint="Sub location/Location/Hotel"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_5"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:textColor="@color/global_text_primary"
+                        android:text="Travel history last 14days"
+                        android:textAllCaps="false"
+                        />
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:id="@+id/radioGroup1">
+
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/radioButton1"
+                            android:checked="true"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:textSize="@dimen/font_7" />
+
+                        <RadioButton
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:layout_marginLeft="@dimen/padding4"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:id="@+id/radioButton2"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_5"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:textColor="@color/global_text_primary"
+                        android:text="Do you have history of:"
+                        />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/Rgroup">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cough"
+                            android:id="@+id/radioButton3"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:textSize="@dimen/font_7" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upper Respiratory"
+                            android:layout_marginLeft="@dimen/padding4"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:id="@+id/radioButton4"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"/>
+
+                        <CheckBox
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-235dp"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"
+                            android:layout_marginTop="30dp"
+                            android:text="Track" />
+
+                        <CheckBox
+                            android:id="@+id/radioButton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="30dp"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"
+                            android:text="None" />
+
+                    </RadioGroup>
+                    <EditText
+                        android:id="@+id/contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Next of Kin names"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/contact_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Next of Kin Phone number"
+                        android:gravity="start|center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/report"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/padding4"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/buttonstyle"
+                        android:text="Submit"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/font_6"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

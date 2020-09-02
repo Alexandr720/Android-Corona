@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">CoronaApp</string>
+    <string name="title_activity_report">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="sampleTxt">Washington is mobilizing to rescue the country from potentially disastrous economic consequences from the global coronavirus outbreak, with the Senate on Wednesday passing a multi-billion dollar emergency package and quickly getting to work on a larger stimulus agreement. With Senate leaders vowing to work at “warp speed” to blunt the financial fallout from the pandemic, the Treasury Department unveiled to lawmakers a plan for $250 billion in direct payments to Americans starting April 6. Meanwhile, Senate Republicans were inching closer on Wednesday to unveiling their proposal for a third, even larger stimulus package to address the epidemic</string>
+    <string name="title_activity_show_current_location">Map</string>
+    <string name="default_notification_channel_id">corona_channel</string>
+    <string name="term">GENERAL INFORMATION ABOUT COVID-19\n
+1. Corona Virus Disease 2019 (COVID19) is a new respiratory illness that can easily be spread from person to person.\n
+2. COVID-19 is spread through contact with droplets produced by a person who is sneezing or coughing or contaminated surfaces or objects.\n
+3. COVID-19 can cause severe symptoms like fever, cough, headache, body aches and difficulty in breathing.\n
+4. COVID-19 is preventable through;\n
+–Washing your hands with soap and running water or using an alcohol based hand sanitizer,\n
+– Keeping a social distance of at least 2 metres or 2-3 steps from people with flu-like symptoms.\n
+– Avoiding shaking hands, hugging or kissing with people with flu-like symptoms.\n
+– Staying at home and avoiding travel when you have flu-like symptoms.\n
+5. Early detection and treatment can contribute greatly to survival of the patient.\n
+6. COVID 2019 cannot be transmitted through air</string>
+    <string name="report">Report</string>
+    <string name="checkin">Check In</string>
+    <string name="enforcement">Enforcement</string>
+    <string name="tracing_gover">Tracing Government Offices</string>
+    <string name="tracing_passenger">Tracing Passengers</string>
+    <string name="chv">CHV</string>
+    <string name="gbv">GBV</string>
+    <string name="chv_house">CHV Household</string>
+    <string name="chv_mother">CHV Mother</string>
+    <string name="send_all">Send All</string>
+
+    <string-array name="string_array_alcohol">
+        <item>Vodka</item>
+        <item>Rum</item>
+        <item>Whiskey</item>
+        <item>Gin</item>
+        <item>Tequila</item>
+    </string-array>
+
+    <string-array name="string_array_coffee">
+        <item>Espresso</item>
+        <item>Macchiato</item>
+        <item>Cappuccino</item>
+        <item>Cafe Latte</item>
+        <item>Ristretto</item>
+    </string-array>
+
+    <string-array name="string_array_pasta">
+        <item>Carbonara</item>
+        <item>Capellini</item>
+        <item>Spaghetti</item>
+        <item>Gnocchi</item>
+        <item>Lasagnette</item>
+    </string-array>
+
+    <string-array name="string_array_cold_drinks">
+        <item>Cola</item>
+        <item>Lemonade</item>
+        <item>Citrus soda</item>
+        <item>Juice</item>
+        <item>Sparkling Water</item>
+    </string-array>
+</resources>

@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewReportCenterActivity" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000">
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingStart="10sp"
+                android:onClick="closeReport"
+                android:src="@drawable/newback"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/logo"
+                map:layout_constraintBottom_toBottomOf="@+id/textView3"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintHorizontal_bias="1.0"
+                map:layout_constraintStart_toEndOf="@+id/textView3"
+                map:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="130dp"
+                android:shadowColor="#43F54A"
+                android:text="REPORT"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textColorHighlight="#14DD1B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                map:layout_constraintBottom_toBottomOf="@+id/imageView24"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintStart_toEndOf="@+id/imageView24"
+                map:layout_constraintTop_toTopOf="@+id/imageView24"
+                map:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#fff"
+        map:cardBackgroundColor="#fff"
+        map:cardCornerRadius="10dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/toolbarView"
+        map:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/third"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="#FFFFFF"
+                android:textAlignment="textStart"
+                map:layout_constraintBottom_toBottomOf="@+id/self"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintStart_toStartOf="@+id/third1"
+                map:layout_constraintTop_toBottomOf="@+id/self1">
+
+            </Button>
+
+            <Button
+                android:id="@+id/self"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/red"
+                android:textAlignment="textStart"
+                map:layout_constraintEnd_toEndOf="@+id/self1"
+                map:layout_constraintHorizontal_bias="0.0"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toBottomOf="@+id/self1">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="16dp"
+                android:text="Yemi Osibanjo !"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintHorizontal_bias="0.0"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/third1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Third Party Report"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textStyle="bold"
+                map:layout_constraintBottom_toBottomOf="@+id/self1"
+                map:layout_constraintEnd_toEndOf="@+id/textView29"
+                map:layout_constraintStart_toEndOf="@+id/self1"
+                map:layout_constraintTop_toTopOf="@+id/self1" />
+
+            <TextView
+                android:id="@+id/self1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Self Report"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                map:layout_constraintEnd_toStartOf="@+id/third1"
+                map:layout_constraintStart_toStartOf="@+id/textView29"
+                map:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="0dp"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12sp"
+                map:layout_constraintEnd_toEndOf="@+id/textView28"
+                map:layout_constraintHorizontal_bias="0.0"
+                map:layout_constraintStart_toStartOf="@+id/textView28"
+                map:layout_constraintTop_toBottomOf="@+id/textView28">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="12sp"
+                map:layout_constraintEnd_toEndOf="@+id/textView28"
+                map:layout_constraintHorizontal_bias="0.0"
+                map:layout_constraintStart_toStartOf="@+id/textView28"
+                map:layout_constraintTop_toBottomOf="@+id/textView27">
+
+            </TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toBottomOf="@+id/third"
+                map:layout_constraintVertical_bias="0.51">
+
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="reportSubmitBtnTapped"
+                    android:text="Send Report"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    map:layout_constraintBottom_toBottomOf="parent"
+                    map:layout_constraintEnd_toEndOf="@+id/editText12"
+                    map:layout_constraintStart_toStartOf="@+id/editText12"
+                    map:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="76dp"
+                    android:background="@drawable/backcolorbrowse"
+                    android:onClick="browseBtnTapped"
+                    android:paddingEnd="12dp"
+                    android:text="Browse"
+                    android:textAlignment="textEnd"
+                    android:textSize="10sp"
+                    map:layout_constraintBottom_toBottomOf="@+id/textView35"
+                    map:layout_constraintCircleRadius="20dp"
+                    map:layout_constraintStart_toEndOf="@+id/textView35"
+                    map:layout_constraintTop_toTopOf="@+id/textView35" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/stylebrowseimage"
+                    android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                    android:onClick="photoBtnTapped"
+                    android:paddingLeft="10dp"
+                    map:layout_constraintBottom_toBottomOf="@+id/textView35"
+                    map:layout_constraintCircleRadius="20dp"
+                    map:layout_constraintEnd_toEndOf="parent"
+                    map:layout_constraintHorizontal_bias="0.0"
+                    map:layout_constraintStart_toEndOf="@+id/textView35"
+                    map:layout_constraintTop_toTopOf="@+id/textView35" />
+
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/textstyle"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:padding="5sp"
+                    android:textSize="12sp"
+                    map:layout_constraintEnd_toEndOf="@+id/textView30"
+                    map:layout_constraintStart_toStartOf="@+id/textView30"
+                    map:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="First Name"
+                    android:padding="6dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    map:layout_constraintEnd_toStartOf="@+id/lastname"
+                    map:layout_constraintStart_toStartOf="parent"
+                    map:layout_constraintTop_toTopOf="parent">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/lastname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="Second Name "
+                    android:padding="6dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    map:layout_constraintBottom_toBottomOf="@+id/firstname"
+                    map:layout_constraintEnd_toStartOf="@+id/lastname2"
+                    map:layout_constraintStart_toEndOf="@+id/firstname"
+                    map:layout_constraintTop_toTopOf="@+id/firstname"
+                    map:layout_constraintVertical_bias="0.0">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/lastname2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edittextstyle"
+                    android:hint="Age "
+                    android:padding="6dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    map:layout_constraintEnd_toEndOf="parent"
+                    map:layout_constraintStart_toEndOf="@+id/cardView19"
+                    map:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Upload Video/Photo"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="12sp"
+                    map:layout_constraintStart_toStartOf="@+id/editText12"
+                    map:layout_constraintTop_toBottomOf="@+id/editText12" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Additional Information (Phone No., Address, etc)"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    map:layout_constraintEnd_toEndOf="@+id/cardView21"
+                    map:layout_constraintStart_toStartOf="@+id/cardView17"
+                    map:layout_constraintTop_toBottomOf="@+id/cardView17" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:onClick="runningNoseBtnTapped"
+                    android:tag="1"
+                    map:cardCornerRadius="4dp"
+                    map:layout_constraintEnd_toStartOf="@+id/cardView18"
+                    map:layout_constraintHorizontal_bias="0.5"
+                    map:layout_constraintStart_toStartOf="parent"
+                    map:layout_constraintTop_toBottomOf="@+id/firstname">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView31"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/runnynose"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/runningNoseTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Runny Nose"
+                            android:textAlignment="center"
+                            android:textSize="8sp"
+                            map:layout_constraintBottom_toBottomOf="parent"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toBottomOf="@+id/imageView31">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:onClick="feverBtnTapped"
+                    android:tag="3"
+                    map:cardCornerRadius="4dp"
+                    map:layout_constraintEnd_toStartOf="@+id/cardView22"
+                    map:layout_constraintHorizontal_bias="0.5"
+                    map:layout_constraintStart_toEndOf="@+id/cardView18"
+                    map:layout_constraintTop_toTopOf="@+id/cardView18">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/fever"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/fever"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/feverTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Fever"
+                            android:textAlignment="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="8sp"
+                            map:layout_constraintBottom_toBottomOf="parent"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toBottomOf="@+id/fever">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:onClick="coughingNoseBtnTapped"
+                    android:tag="2"
+                    map:cardCornerRadius="4dp"
+                    map:layout_constraintBottom_toBottomOf="@+id/cardView15"
+                    map:layout_constraintEnd_toStartOf="@+id/cardView19"
+                    map:layout_constraintHorizontal_bias="0.5"
+                    map:layout_constraintStart_toEndOf="@+id/cardView15"
+                    map:layout_constraintTop_toTopOf="@+id/cardView15">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/coughing"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/coughing"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/coughingTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Coughing"
+                            android:textAlignment="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="8sp"
+                            map:layout_constraintBottom_toBottomOf="parent"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toBottomOf="@+id/coughing">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:onClick="sneezingBtnTapped"
+                    android:tag="5"
+                    map:cardCornerRadius="4dp"
+                    map:layout_constraintEnd_toStartOf="@+id/cardView16"
+                    map:layout_constraintHorizontal_bias="0.5"
+                    map:layout_constraintStart_toStartOf="parent"
+                    map:layout_constraintTop_toBottomOf="@+id/cardView15">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/sneezing"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/sneezing"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/snezzingTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Sneezing"
+                            android:textAlignment="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="8sp"
+                            map:layout_constraintBottom_toBottomOf="parent"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toBottomOf="@+id/sneezing">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:onClick="shortBreathBtnTapped"
+                    android:tag="7"
+                    map:cardCornerRadius="4dp"
+                    map:layout_constraintBottom_toBottomOf="@+id/cardView16"
+                    map:layout_constraintEnd_toStartOf="@+id/cardView21"
+                    map:layout_constraintHorizontal_bias="0.5"
+                    map:layout_constraintStart_toEndOf="@+id/cardView16"
+                    map:layout_constraintTop_toTopOf="@+id/cardView16">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/shortbreath"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/shortbreath"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/shortbreathTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Short Breath"
+                            android:textAlignment="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="8sp"
+                            map:layout_constraintBottom_toBottomOf="parent"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toBottomOf="@+id/shortbreath">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="intArrivalBtnTapped"
+                    android:tag="8"
+                    map:cardCornerRadius="4dp"
+                    map:layout_constraintBottom_toBottomOf="@+id/cardView20"
+                    map:layout_constraintEnd_toEndOf="parent"
+                    map:layout_constraintHorizontal_bias="0.5"
+                    map:layout_constraintStart_toEndOf="@+id/cardView20"
+                    map:layout_constraintTop_toTopOf="@+id/cardView20">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/arrival"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/arrival"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/arrivalTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Int'l Arrival"
+                            android:textAlignment="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="8sp"
+                            map:layout_constraintBottom_toBottomOf="parent"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toBottomOf="@+id/arrival">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="soreThroatTapped"
+                    android:tag="4"
+                    map:cardCornerRadius="4dp"
+                    map:layout_constraintBottom_toBottomOf="@+id/cardView19"
+                    map:layout_constraintEnd_toEndOf="parent"
+                    map:layout_constraintHorizontal_bias="0.5"
+                    map:layout_constraintStart_toEndOf="@+id/cardView19"
+                    map:layout_constraintTop_toTopOf="@+id/cardView19">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/sore"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/sorethroat"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/soreTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Sore Throat"
+                            android:textAlignment="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="8sp"
+                            map:layout_constraintBottom_toBottomOf="parent"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toBottomOf="@+id/sore">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:onClick="headacheBtnTapped"
+                    android:tag="6"
+                    map:cardCornerRadius="4dp"
+                    map:layout_constraintBottom_toBottomOf="@+id/cardView17"
+                    map:layout_constraintEnd_toStartOf="@+id/cardView20"
+                    map:layout_constraintHorizontal_bias="0.5"
+                    map:layout_constraintStart_toEndOf="@+id/cardView17"
+                    map:layout_constraintTop_toTopOf="@+id/cardView17">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/headache"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/headache"
+                            map:layout_constraintEnd_toEndOf="parent"
+                            map:layout_constraintStart_toStartOf="parent"
+                            map:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/headacheTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Headache"
+                            android:textAlignment="center"
+                            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                            android:textSize="8sp"
+                            map:layout_constraintBottom_toBottomOf="parent"
+                            map:layout_constraintEnd_toEndOf="@+id/headache"
+                            map:layout_constraintStart_toStartOf="@+id/headache"
+                            map:layout_constraintTop_toBottomOf="@+id/headache">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        map:cardCornerRadius="50dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/toolbarView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/circularImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_pic"
+                map:civ_border_color="#fff"
+                map:civ_border_width="3dp"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintHorizontal_bias="0.0"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toTopOf="parent"
+                map:layout_constraintVertical_bias="1.0">
+
+            </com.mikhaellopez.circularimageview.CircularImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

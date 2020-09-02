@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#fff"
+        map:cardBackgroundColor="#fff"
+        map:cardCornerRadius="10dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PREGNANT MOTHERS"
+                        android:textSize="17dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:paddingLeft="10dp"
+                        android:hint="Title"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:paddingLeft="10dp"
+                        android:hint="Mother name"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Age of Mother"
+                        android:gravity="start|center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_5"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/global_text_primary"
+                        android:text="Registered for NHIF:"
+                        />
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:id="@+id/radioGroup1">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/nhif1"
+                            android:checked="true"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:textSize="@dimen/font_7" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:id="@+id/nhif2"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"/>
+                    </RadioGroup>
+                    <EditText
+                        android:id="@+id/phone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Phone Number"
+                        android:gravity="start|center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/mother_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:hint="Mother ID"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/village"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:hint="Village"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <EditText
+                        android:id="@+id/ward"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:hint="Ward"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_5"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/global_text_primary"
+                        android:text="Do you attend clinic? - Indicate yes if only clinic book available: Yes"
+                        />
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:id="@+id/radioGroup2">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/clinic1"
+                            android:checked="true"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:textSize="@dimen/font_7" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:layout_marginLeft="@dimen/padding8"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:id="@+id/clinic2"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"/>
+                    </RadioGroup>
+                    <TextView
+                        android:id="@+id/due_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="What is expected due date?"
+                        android:gravity="start|center"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_5"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/global_text_primary"
+                        android:text="Are you taking folic acid?"
+                        />
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="start|center"
+                        android:id="@+id/radioGroup3">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:id="@+id/folic1"
+                            android:checked="true"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:textSize="@dimen/font_7" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:layout_marginLeft="@dimen/padding8"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:id="@+id/folic2"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_5"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/global_text_primary"
+                        android:text="Marital status"
+                        />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/Rgroup">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Married"
+                            android:id="@+id/mary1"
+                            android:checked="true"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:textSize="@dimen/font_7" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Single"
+                            android:layout_marginLeft="@dimen/padding4"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:id="@+id/mary2"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"/>
+
+                        <RadioButton
+                            android:id="@+id/mary3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-170dp"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"
+                            android:layout_marginTop="30dp"
+                            android:text="Divorced" />
+
+                        <RadioButton
+                            android:id="@+id/mary4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="30dp"
+                            android:buttonTint="@color/global_color_orange_primary_dark"
+                            android:checked="false"
+                            android:textSize="@dimen/font_7"
+                            android:text="Widowed" />
+
+                    </RadioGroup>
+                    <EditText
+                        android:id="@+id/children"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="How many children do you have?"
+                        android:gravity="start|center"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+
+                    <EditText
+                        android:id="@+id/remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/textstyle"
+                        android:ems="10"
+                        android:hint="Remarks"
+                        android:gravity="start|center"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:padding="5sp"
+                        android:textSize="12sp"/>
+
+                    <Button
+                        android:id="@+id/report"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/buttonstyle"
+                        android:text="Submit"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/font_6"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

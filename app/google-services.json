@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "143847016324",
+    "firebase_url": "https://test-corona-4e6de.firebaseio.com",
+    "project_id": "test-corona-4e6de",
+    "storage_bucket": "test-corona-4e6de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143847016324:android:769d4e8e304dbc2fe2ffd1",
+        "android_client_info": {
+          "package_name": "com.stepin.coronaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143847016324-udjs23tvl8b31onl6eoqg26pmq47mvp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stepin.coronaapp",
+            "certificate_hash": "a6edd80e58b8153548d26f0d32f8c37d826fd558"
+          }
+        },
+        {
+          "client_id": "143847016324-mnmt1du52fattbaif9npmae1viutarue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQkHjdom9YTKEKt0d-3JaOTFQm5b7rD0g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143847016324-mnmt1du52fattbaif9npmae1viutarue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckInActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000">
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:onClick="closeCheckIn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingStart="10sp"
+                android:src="@drawable/newback"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/logo"
+                map:layout_constraintBottom_toBottomOf="@+id/textView3"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintHorizontal_bias="1.0"
+                map:layout_constraintStart_toEndOf="@+id/textView3"
+                map:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="130dp"
+                android:shadowColor="#43F54A"
+                android:text="CHECK IN "
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textColorHighlight="#14DD1B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                map:layout_constraintBottom_toBottomOf="@+id/imageView24"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintStart_toEndOf="@+id/imageView24"
+                map:layout_constraintTop_toTopOf="@+id/imageView24"
+                map:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/toolbarView" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        map:cardElevation="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/toolbarView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="People"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                map:layout_constraintBottom_toTopOf="@+id/textView17"
+                map:layout_constraintEnd_toEndOf="@+id/textView17"
+                map:layout_constraintStart_toStartOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="How many people are around you?"
+                android:textColor="#15181C"
+                map:layout_constraintBottom_toTopOf="@+id/button14"
+                map:layout_constraintEnd_toEndOf="@+id/button15"
+                map:layout_constraintStart_toStartOf="@+id/people10" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/buttonsforcheckin"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="50 +"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                map:layout_constraintBottom_toBottomOf="@+id/button14"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintHorizontal_bias="0.5"
+                map:layout_constraintStart_toEndOf="@+id/button14" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/buttonsforcheckin"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Less than 50"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                map:layout_constraintBottom_toBottomOf="@+id/people10"
+                map:layout_constraintEnd_toStartOf="@+id/button15"
+                map:layout_constraintHorizontal_bias="0.5"
+                map:layout_constraintStart_toEndOf="@+id/people10" />
+
+            <Button
+                android:id="@+id/people10"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonforcheckinselected"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Less than 10"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                map:layout_constraintBottom_toTopOf="@+id/textView121"
+                map:layout_constraintEnd_toStartOf="@+id/button14"
+                map:layout_constraintHorizontal_bias="0.5"
+                map:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView121"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                map:layout_constraintBottom_toTopOf="@+id/button10"
+                map:layout_constraintEnd_toEndOf="@+id/button12"
+                map:layout_constraintStart_toStartOf="@+id/button11" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/buttonsforcheckin"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="6 hr+"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                map:layout_constraintBottom_toBottomOf="@+id/button10"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintHorizontal_bias="0.5"
+                map:layout_constraintStart_toEndOf="@+id/button10" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonsforcheckin"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Less than 6 hr"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                map:layout_constraintBottom_toTopOf="@+id/textView12"
+                map:layout_constraintEnd_toStartOf="@+id/button10"
+                map:layout_constraintHorizontal_bias="0.5"
+                map:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/buttonsforcheckin"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Less than 1 hr"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                map:layout_constraintBottom_toBottomOf="@+id/button11"
+                map:layout_constraintEnd_toStartOf="@+id/button12"
+                map:layout_constraintHorizontal_bias="0.5"
+                map:layout_constraintStart_toEndOf="@+id/button11" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Utilities"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                map:layout_constraintBottom_toTopOf="@+id/button9"
+                map:layout_constraintEnd_toEndOf="@+id/button9"
+                map:layout_constraintStart_toStartOf="@+id/button9" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonsforcheckin"
+                android:paddingLeft="10dp"
+                android:text="Restroom"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                map:layout_constraintBottom_toTopOf="@+id/textView11"
+                map:layout_constraintEnd_toEndOf="@+id/textView11"
+                map:layout_constraintStart_toStartOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Additional Info "
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                map:layout_constraintBottom_toTopOf="@+id/editText7"
+                map:layout_constraintEnd_toEndOf="@+id/editText7"
+                map:layout_constraintStart_toStartOf="@+id/editText7" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/textstyle"
+                map:layout_constraintBottom_toTopOf="@+id/button8"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/buttonstyle"
+                android:text="SUBMIT"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                map:layout_constraintBottom_toBottomOf="parent"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintHorizontal_bias="0.498"
+                map:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="16dp"
+                map:cardElevation="0dp"
+                map:cardBackgroundColor="#F3F3F3"
+                map:layout_constraintBottom_toTopOf="@+id/textView20"
+                map:layout_constraintEnd_toEndOf="parent"
+                map:layout_constraintStart_toStartOf="parent"
+                map:layout_constraintTop_toTopOf="parent" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="65dp"
+                        android:text="Yemi Osinbajo!"
+                        android:textColor="#15181C"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        map:layout_constraintEnd_toEndOf="parent"
+                        map:layout_constraintStart_toStartOf="parent"
+                        map:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No. 5, Asaso Street, Asokoro"
+                        android:textColor="#BA0001"
+                        map:layout_constraintEnd_toEndOf="parent"
+                        map:layout_constraintStart_toStartOf="parent"
+                        map:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="ABUJA - 4:34 PM"
+                        android:textColor="#A8A8A8"
+                        android:textSize="10sp"
+                        map:layout_constraintEnd_toEndOf="parent"
+                        map:layout_constraintHorizontal_bias="0.498"
+                        map:layout_constraintStart_toStartOf="parent"
+                        map:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profile_pic"
+        map:civ_border_color="#fff"
+        map:civ_border_width="3dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/toolbarView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
